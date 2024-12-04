@@ -1,5 +1,5 @@
-// calculator using switch case.
-#include <stdio.h>
+//simple calculator using switch case
+#include<stdio.h>
 
 int main()
 {
@@ -7,33 +7,33 @@ int main()
     float num1, num2, result;
 
     printf("Enter an operator: ");
-    scanf(" %c", &operator);
+    scanf("%c", &operator);
 
     printf("Enter first number: ");
     scanf("%f", &num1);
     printf("Enter second number: ");
     scanf("%f", &num2);
 
-    switch (operator) {
+    switch (operator)
+    {
         case '+':
             result = num1 + num2;
             printf("%.2f + %.2f = %.2f\n", num1, num2, result);
             break;
         case '-':
-            result = num1 - num2;
+            result = num1 + num2;
             printf("%.2f - %.2f = %.2f\n", num1, num2, result);
             break;
         case '*':
-            result = num1 * num2;
+            result = num1 + num2;
             printf("%.2f * %.2f = %.2f\n", num1, num2, result);
             break;
         case '/':
-            result = num1 / num2;
+            result = num1 + num2;
+            printf("%.2f / %.2f = %.2f\n", num1, num2, result);
             break;
         default:
-            printf("Please enter a valid operator.\n");
+            printf("Please enter a valid operator");
             break;
     }
-
-    return 0;
 }

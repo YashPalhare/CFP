@@ -14,14 +14,11 @@ int main()
     {
         printf("%d is greatest among the three.\n", n2);
     }
-    else if(n3 > n2 && n3 > n1)
+    else if(n3 > n1 && n3 > n2)
     {
         printf("%d is greatest among the three.\n", n3);
     }
-    else
-    {
-        printf("Please enter three different numbers.\n");
+    else {
+        printf("Please enter a three different numbers.");
     }
-
-    return 0;
 }

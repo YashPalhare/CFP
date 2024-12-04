@@ -3,7 +3,7 @@
 int main()
 {
     int num;
-    printf("Enter a number\n");
+    printf("Enter a number: ");
     scanf("%d", &num);
     if(num < 0)
     {
@@ -13,10 +13,7 @@ int main()
     {
         printf("The number is neutral.\n");
     }
-    else
-    {
-        printf("The number is positive.\n");
+    else {
+        printf("The number is positive\n");
     }
-
-    return 0;
 }

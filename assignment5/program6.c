@@ -1,21 +1,11 @@
-//C code to calculate net salary
-#include <stdio.h>
+//code for calculating net salary
+#include<stdio.h>
 
 int main()
 {
-    float basicSalary = 15000.0;
-    float HRA_percentage = 0.20; 
-    float DA_percentage = 0.30;
-
-    float HRA = basicSalary * HRA_percentage;
-    float DA = basicSalary * DA_percentage;
-
-    float netSalary = basicSalary + HRA + DA;
-
-    printf("Basic Salary: %.2f\n", basicSalary);
-    printf("HRA (20%%): %.2f\n", HRA);
-    printf("DA (30%%): %.2f\n", DA);
-    printf("Net Salary: %.2f\n", netSalary);
-
-    return 0;
+    float basic_salary = 15000.0, HRA, DA, net_salary;
+    HRA = basic_salary*0.20;
+    DA = basic_salary*0.30;
+    net_salary = basic_salary + HRA + DA;
+    printf(" Basic salary is %.2f\n HRA is %.2f\n DA is %.2f\n Net salary is %.2f\n", basic_salary, HRA, DA, net_salary);
 }
