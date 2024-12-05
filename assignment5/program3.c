@@ -6,16 +6,16 @@ int choice;
 
 int check() {
     if (choice == 1) {
-        printf("The result is: %f\n", num1+num2);
+        printf("The result is: %.2f\n", num1+num2);
     }
     else if (choice == 2) {
-        printf("The result is: 4%f\n", num1-num2);
+        printf("The result is: %.2f\n", num1-num2);
     }
     else if (choice == 3) {
-        printf("The result is: %f\n", num1*num2);
+        printf("The result is: %.2f\n", num1*num2);
     }
     else if (choice == 4) {
-        printf("The result is: %f\n", num1/num2);
+        printf("The result is: %.2f\n", num1/num2);
     }
     else {
         printf("please enter a valid choice.\n");
